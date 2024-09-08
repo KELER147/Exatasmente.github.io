@@ -1,0 +1,31 @@
+<!--INICIO NAVBAR-->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ExatasMente</title>
+    <link rel="stylesheet" href="biblioteca/css/contato.css" />
+    <script defer src="biblioteca/js/contato.js"></script>
+
+<!--INICIO CONTATO-->
+    <section>
+      <h2>CONTATE-NOS</h2>
+      <form action="https://api.staticforms.xyz/submit" method="post">
+          <label>NOME</label>
+          <input type="text" name="name" placeholder="Digite seu NOME" autocomplete="off" required>
+          <label>TELEFONE</label>
+          <input type="text" name="tel" placeholder="Digite seu TELEFONE" autocomplete="off" required>
+          <label>E-MAIL</label>
+          <input type="text" name="email" placeholder="Digite seu E-MAIL" autocomplete="off" required>
+          <label>MENSAGEM</label>
+          <textarea name="message" cols="30" rows="10" placeholder="MENSAGEM" required ></textarea>
+          <button  type="submit"><b>ENVIAR</b></button>
+          <a id="voltar" href="index.html" class="button"><b>VOLTAR</b></a>   
+
+          <input type="hidden" name="accessKey" value="key">
+          <input type="hidden" name="redirectTo" value="Pagina de obrigado">
+      </form>
+    </section>
+<!--FIM CONTATO-->
+

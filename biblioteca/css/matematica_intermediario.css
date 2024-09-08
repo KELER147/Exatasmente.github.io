@@ -1,0 +1,367 @@
+/*INICIL BACGROUND*/
+
+.body {
+    background: #09001d;
+}
+/*FIM BACGROUND*/
+
+/*SEÇÃO DA PERGUNTA*/
+
+        /*POSIÇÃO DO QUADRADO ONDE ESTA A PERGUNTA E A QUESTÃO*/
+.quiz-section {
+    position: relative;
+    margin: 100px;
+    width: 90%;
+    background: #09001d;
+    display: flex;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: 8.s ease-in-out;
+    transition-delay: .25s;
+}
+
+.quiz-section.active{
+    left: 0;
+}
+
+        /*TAMANHO DO CONTORNO E A COR DO CONTORNO*/
+.quiz-section .quiz-box {
+    position: relative;
+    margin-top: 80px;
+    width: 700px;
+    background: transparent;
+    border: 2px solid #e07109;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+}
+
+    /* COR DA MATERIA */
+
+#matematica {
+    font-size: 40px;
+    font-weight: 500;
+    color: #e07109;
+}
+        /*TAMANHO DO TITULO E A COR DO TITULO*/
+.quiz-box h1 {
+    font-size: 32px;
+    text-align: center;
+    background: linear-gradient(45deg, #e07109, transparent);
+}
+
+        /*ESPAÇAMENTO ENTRE A PERGUNTA E O ACEERTOS E A COR DA LINHA EMBAIXO PARA A DIVISAO*/
+.quiz-box .quiz-header {
+    display: flex;;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #e07109;
+    margin-bottom: 20px;
+}
+
+        /*TAMANHO DOS CONTADOR*/
+.quiz-box .quiz-header {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+        /*COR ENVOLTA DO CONTADOR*/
+.quiz-header  .header-score {
+    background: #e07109;
+    border-radius: 3px;
+    padding: 7px;
+}
+
+        /*TAMANHO DO TEXTO DA PERGUNTA*/
+.quiz-box .question-text {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+        /*TAMANHO DO TEXTO DAS RESPOSTA E CONTORNO*/
+.option-list .option {
+    width: 100%;
+    padding: 10px 5px;
+    background: transparent;
+    border: 2px solid   rgba(225, 225, 225, .2);
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: all 1.0s;
+}
+
+        /*ANIMAÇÃO DAS OPÇÕES*/
+.option-list .option:hover {
+    color:  #e07109;
+    border-radius: 15px;
+    border: 2px solid #e07109;
+    background: rgba(2, 156, 41, 0.1);
+}
+
+
+
+
+          /*ESPAÇAMENTO ENTRE O NEXT E O 0/5*/
+.quiz-box .quiz-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #e07109;
+    padding-top: 20px;
+    margin-top: 20px;
+
+}
+
+        /*nada*/
+.quiz-footer .quiz-total {
+    font-size: 16;
+    width: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*COR DAS OPÇÕES SE ESTIVER CERTA OU ERRADA*/
+        .option-list .option.correct {
+            background: #2EAE01;
+            color: #09001d;
+            border-color:#0f3800;
+            transition: 1s;
+        }
+        .option-list .option.incorrect {
+            background: #09001d;
+            color: #b80606;
+            border-color:#b80606;
+        }
+        .no-pointer {
+            pointer-events: none;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*EDIÇÃO DO BOTAO NEXT*/
+.quiz-footer .next-btn {
+    margin-left: 150px;
+    width: 100px;
+    height: 40px;
+    background: rgba(225, 225, 225, .1);
+    border: 2px solid rgba(225, 225, 225, .1);
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: rgba(225, 225, 225, .3);
+    font-weight: 600;
+    cursor: pointer;
+    pointer-events: none;
+    transition: all 1.0s;
+}
+
+
+
+
+        /*ANMAÇÃO DO BOTAO NEXT*/
+.quiz-footer .next-btn:hover {
+    background: #e07109;
+    background-color: #e07109;
+    color: black;
+}
+
+
+.quiz-footer .next-btn.active {
+    pointer-events: auto;
+    background: #e07109;
+    background-color: #e07109;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+        /*EDIÇÃO DO BOTAO PONTUAÇÃO*/
+.quiz-footer .Pontuação-btn {
+    width: 150px;
+    height: 40px;
+    background: rgba(225, 225, 225, .1);
+    border: 2px solid rgba(225, 225, 225, .1);
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: rgba(225, 225, 225, .3);
+    font-weight: 600;
+    cursor: pointer;
+    pointer-events: none;
+    transition: all 1.0s;
+    opacity: 1000;
+}
+        
+
+.quiz-footer .Pontuação-btn:hover {
+    background: #e07109;
+    background-color: #e07109;
+    color: black;
+}
+        
+        
+.quiz-footer  .Pontuação-btn.active {
+    pointer-events: auto;
+    background: #e07109;
+    background-color: #e07109;
+    color: black;
+    opacity: 100%;
+}
+        
+
+
+
+
+
+
+
+
+
+
+                /*EDIÇÃO DO BOTAO NOVAMENTE*/
+.quiz-footer .Novamente-btn {
+    width: 150px;
+    height: 40px;
+    background: rgba(225, 225, 225, .1);
+    border: 2px solid rgba(225, 225, 225, .1);
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: rgba(225, 225, 225, .3);
+    font-weight: 600;
+    cursor: pointer;
+    pointer-events: none;
+    transition: all 1.0s;
+    opacity: 1000;
+}
+        
+        /*ANMAÇÃO DO BOTAO NEXT*/
+.quiz-footer .Novamente-btn:hover {
+    background: #e07109;
+    background-color: #e07109;
+    color: black;
+}
+        
+        
+.quiz-footer  .Novamente-btn.active {
+    pointer-events: auto;
+    background: #e07109;
+    background-color:#e07109;
+    color: black;
+    opacity: 100%;
+
+/*FIM SEÇÃO*/
